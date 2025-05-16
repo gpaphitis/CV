@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}          % Support for including images
+\graphicspath{ {./images/} }
+\usepackage{fontspec}  % Required for font selection with XeLaTeX/LuaLaTeX
+\usepackage{blindtext}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[top=0cm, left=0cm,right=0.5cm,bottom=0cm]{geometry}
+\usepackage{ragged2e}
+\usepackage[colorlinks=true, linkcolor=white, urlcolor=white, citecolor=white]{hyperref}
+\usepackage{enumitem}
+\usepackage{lipsum}
+\usepackage{paracol}
+\setmainfont{Times New Roman}
+\definecolor{mybgcolor}{HTML}{203864}
+%Strongly discourage hyphenation
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+% Left align text
+\RaggedRight
+
+\title{Giorgos Paphitis}
+\author{Giorgos Paphitis}
+
+\begin{document}
+\pagestyle{empty}
+\columnratio{0.30,0.50}
+\begin{paracol}{2} % sync off, 2 columns
+   \setlength{\columnsep}{12pt} % space between columns
+
+   % LEFT COLUMN
+   \begin{tcolorbox}[colback=mybgcolor, colframe=mybgcolor, boxrule=0pt, arc=0pt, outer arc=0pt, left=10pt, right=8pt, top=20pt, bottom=10pt,height=\textheight]
+      \setlength{\leftskip}{5pt}
+      \setlength{\rightskip}{5pt}
+      \begin{center}
+         \begin{tikzpicture}
+            \def\radius{2.1cm}
+            \draw[line width=4pt, color=white] (0,0) circle (\radius);
+            \clip (0,0) circle (\radius);
+            \node at (0,0) {\includegraphics[scale=0.6]{giorgos_paphitis}};
+         \end{tikzpicture}
+      \end{center}
+      \color{white}
+      \vspace{1cm}
+      {\fontsize{12pt}{18pt}\selectfont
+         \textbf{{\large About me}}\\
+         }
+      \vspace{0.15cm}
+      \hrule
+      \vspace{0.2cm}
+      {\fontsize{10pt}{18pt}\selectfont
+         I am a driven individual that
+         always strives to succeed in all
+         aspects of my life. This
+         characteristic has helped me
+         achieve goals like, highest grade
+         in the 2021 Pancyprian Computer
+         Science Exams and 1st in my
+         cohort at the University of Cyprus
+         studying computer science. I
+         strive to meet deadlines and work
+         well in a team environment.\\
+      }
+      \vspace{1cm}
+      {\fontsize{12pt}{18pt}\selectfont
+         \textbf{{\large Contact details}}\\
+         }
+      \vspace{0.15cm}
+      \hrule
+      \vspace{0.2cm}
+      {\fontsize{10pt}{18pt}\selectfont
+         \textbf{Tel:} 97802067\\
+         \textbf{Email:} gpaphitis03@outlook.com\\
+      }
+      \vspace{1cm}
+      {\fontsize{12pt}{18pt}\selectfont
+         \textbf{{\large Links}}\\
+         }
+      \vspace{0.15cm}
+      \hrule
+      \vspace{0.2cm}
+      {\fontsize{10pt}{13pt}\selectfont
+      \begin{itemize}[leftmargin=15pt, itemsep=0pt, topsep=0pt]
+         \item\href{https://giorgospaphitis.com}{\textbf{Website}}\\
+         \item\href{https://www.linkedin.com/in/giorgos-paphitis-7307a825b/}{\textbf{LinkedIn}}\\
+      \end{itemize}
+      }
+      \vspace{1cm}
+      {\fontsize{12pt}{18pt}\selectfont
+         \textbf{{\large Skills}}\\
+         }
+      \vspace{0.15cm}
+      \hrule
+      \vspace{0.2cm}
+      {\fontsize{10pt}{13pt}\selectfont
+      \begin{itemize}[leftmargin=15pt, itemsep=0pt, topsep=0pt]
+         \item Good communication skills\\
+         \item Problem solving\\
+         \item Multitasking\\
+         \item Time Management\\
+      \end{itemize}
+      }
+   \end{tcolorbox}
+   \switchcolumn
+   % RIGHT COLUMN
+   \vspace*{1.5cm}
+   \textbf{\Huge \textcolor{mybgcolor}{Giorgos Paphitis}}\\[0.5em]
+   \textbf{Computer Science Undergraduate}\\
+   \vspace{2em}
+   \lipsum[2-4]
+   
+\end{paracol}
+
+\end{document}
