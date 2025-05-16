@@ -15,12 +15,14 @@
 \usepackage{lipsum}
 \usepackage{paracol}
 \setmainfont{Times New Roman}
-\definecolor{mybgcolor}{HTML}{203864}
+\definecolor{bgcolor}{HTML}{203864}
+\definecolor{textcolor}{HTML}{303030}
 %Strongly discourage hyphenation
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
 % Left align text
 \RaggedRight
+\color{textcolor}
 
 \title{Giorgos Paphitis}
 \author{Giorgos Paphitis}
@@ -32,7 +34,7 @@
    \setlength{\columnsep}{12pt} % space between columns
 
    % LEFT COLUMN
-   \begin{tcolorbox}[colback=mybgcolor, colframe=mybgcolor, boxrule=0pt, arc=0pt, outer arc=0pt, left=10pt, right=8pt, top=20pt, bottom=10pt,height=\textheight]
+   \begin{tcolorbox}[colback=bgcolor, colframe=bgcolor, boxrule=0pt, arc=0pt, outer arc=0pt, left=10pt, right=8pt, top=20pt, bottom=10pt,height=\textheight]
       \setlength{\leftskip}{5pt}
       \setlength{\rightskip}{5pt}
       \begin{center}
@@ -44,7 +46,7 @@
          \end{tikzpicture}
       \end{center}
       \color{white}
-      \vspace{1cm}
+      \vspace{0.6cm}
       {\fontsize{12pt}{18pt}\selectfont
          \textbf{{\large About me}}\\
          }
@@ -64,7 +66,7 @@
          strive to meet deadlines and work
          well in a team environment.\\
       }
-      \vspace{1cm}
+      \vspace{0.5cm}
       {\fontsize{12pt}{18pt}\selectfont
          \textbf{{\large Contact details}}\\
          }
@@ -75,7 +77,7 @@
          \textbf{Tel:} 97802067\\
          \textbf{Email:} gpaphitis03@outlook.com\\
       }
-      \vspace{1cm}
+      \vspace{0.5cm}
       {\fontsize{12pt}{18pt}\selectfont
          \textbf{{\large Links}}\\
          }
@@ -88,7 +90,7 @@
          \item\href{https://www.linkedin.com/in/giorgos-paphitis-7307a825b/}{\textbf{LinkedIn}}\\
       \end{itemize}
       }
-      \vspace{1cm}
+      \vspace{0.5cm}
       {\fontsize{12pt}{18pt}\selectfont
          \textbf{{\large Skills}}\\
          }
@@ -101,17 +103,61 @@
          \item Problem solving\\
          \item Multitasking\\
          \item Time Management\\
+         \item C/C++\\
+         \item Java\\
+         \item PHP\\
+         \item SQL\\
+         \item HTML\\
+         \item CSS\\
+         \item JavaScript\\
       \end{itemize}
       }
    \end{tcolorbox}
    \switchcolumn
    % RIGHT COLUMN
    \vspace*{1.5cm}
-   \textbf{\Huge \textcolor{mybgcolor}{Giorgos Paphitis}}\\[0.5em]
+   \textbf{\Huge \textcolor{bgcolor}{Giorgos Paphitis}}\\[0.5em]
    \textbf{Computer Science Undergraduate}\\
-   \vspace{2em}
-   \lipsum[2-4]
-   
+   \vspace{1.5cm}
+   {\fontsize{14pt}{13pt}\selectfont
+   \textbf{\textcolor{bgcolor}{Employment History}}\\[0.3em]
+   }
+   \hrule
+   \vspace{0.5cm}
+   \textbf{\textcolor{bgcolor}{Technical Support, Part Time \hfill Sep 2022 - Present}}\\[0.5em]
+   % \textbf{Technical Support - Part Time \hfill Sep 2022 – Present}\\[0.5em]
+   \textcolor{black}{C4E (Centre for Entrepreneurship)}\\[0.5em]
+   {\renewcommand{\labelitemi}{\textcolor{bgcolor}{\normalsize$\bullet$}}%
+   \begin{itemize}[leftmargin=13pt, itemsep=0pt, topsep=0pt]
+         \item Adding and updating articles through Joomla!\\
+         \item Manual development of pages using HTML and CSS\\
+         \item Preparing and uploading media like PDF's or web ready images to the file server\\
+         \item Training new hires\\
+      \end{itemize}
+   }
+   \vspace{0.5cm}
+   \textbf{\textcolor{bgcolor}{Web Developer Intern \hfill Jun 2024 - Jul 2024}}\\[0.5em]
+   % \textbf{Web Developer Intern \hfill Jun 2024 - Jul 2024}\\[0.5em]
+   \textcolor{black}{LightBlack}\\[0.5em]
+   {\renewcommand{\labelitemi}{\textcolor{bgcolor}{\normalsize$\bullet$}}%
+   \begin{itemize}[leftmargin=13pt, itemsep=0pt, topsep=0pt]
+         \item Development of web applications using Symfony framework, Twig, CSS and JavaScript\\
+         \item Adding features and fixing bugs on existing endpoints\\
+         \item Team collaboration\\
+      \end{itemize}
+   }
+   \vspace{0.5cm}
+   \textbf{\textcolor{bgcolor}{Freelance \hfill Jan 2024 - Mar 2024}}\\[0.5em]
+   % \textbf{Web Developer Intern \hfill Jun 2024 - Jul 2024}\\[0.5em]
+   \textcolor{black}{The Junior \& Senior School}\\[0.5em]
+   {\renewcommand{\labelitemi}{\textcolor{bgcolor}{\normalsize$\bullet$}}%
+   \begin{itemize}[leftmargin=13pt, itemsep=0pt, topsep=0pt]
+         \item Phishing simulation\\
+         \item Developed dummy web page monitoring who submitted their credentials\\
+         \item HTML, CSS and JavaScript\\
+         \item Automated emails sent to administrator\\
+      \end{itemize}
+   }
 \end{paracol}
 
 \end{document}
